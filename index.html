@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Кликер дом</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="index, follow"> 
+        <meta name="description" content="сниппет: сайт-визитка полиграфия">
+        <meta title="Кликер дом">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+	<link href="normalize.css" rel="stylesheet" type="text/css"> 
+	<link href="style.css" rel="stylesheet" type="text/css">   
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->   
+    </head>
+    
+<body>
+    
+ <div class="wrapper">
+    
+    <!-- $$Кликер!-->
+      <section class="work">
+              <h2>Начать работать</h2>
+              <button type="button" class="btn clicker">Заработать денег</button>  <!-- $$потом заменить на 10!--> 
+              <button type="button" class="btn clicker-hard">Заработать денег тяжким трудом</button> 
+              <div id="count">Ваш баланс: 0</div> 
+							<div id="message">Рабочий день начался</div>
+							<p id="test">20</p>
+							<!--<input id="btnStart" type="submit" value="Запустить таймер!" onclick="timer()">-->
+      </section>
+          
+    <!-- $$Магазин!-->
+    <section class="shop">
+
+          <h2>Магазин</h2>
+        
+          <div class="shop-items">
+                
+            <!-- $$Купить - $$фундамент!-->
+          <div class="shop-item">
+							<p>Фундамент - $100</p>
+							<button type="button" class="btn house-base-buy" value="100" onclick="buyItem(this)">Купить</button>
+          </div>
+            <!-- $$Купить - $$Стены!-->
+					<div class="shop-item">
+            <p>Стены - $150</p>
+						<button type="button" class="btn house-walls-buy" value="150" onclick="buyItem(this)">Купить</button>
+          </div> 
+            <div class="walls-colors">
+                <p>Выберите цвет:</p>
+                <button class="color walls-color-blue" value="5" onclick="buyItem(this)"></button>
+                <button class="color walls-color-green" value="5" onclick="buyItem(this)"></button>
+                <button class="color walls-color-red" value="5" onclick="buyItem(this)"></button>
+                <button class="color walls-color-violet" value="5" onclick="buyItem(this)"></button>
+								<button class="color walls-color-grey" value="5" onclick="buyItem(this)"></button>
+                <button class="color walls-colors-exit">X</button>
+            </div>
+						
+
+            <!-- $Купить- $ Крыша!-->
+						<div class="shop-item">
+            <p>Крыша - $90</p>
+            <button type="button" class="btn house-roof-buy" value="90" onclick="buyItem(this)">Купить</button>			</div>	
+                    
+            <!-- $Купить - $Дверь!-->
+						<div class="shop-item">	
+            <p> Дверь - $80</p>
+            <button type="button" class="btn house-door-buy" value="80" onclick="buyItem(this)">Купить</button>
+						</div>
+           <div class="door-colors">
+                <p>Выберите цвет:</p>		
+						    <button class="color door-color-blue" value="5" onclick="buyItem(this)"></button>
+                <button class="color door-color-green" value="5" onclick="buyItem(this)"></button>
+                <button class="color door-color-red" value="5" onclick="buyItem(this)"></button>
+                <button class="color door-color-violet" value="5" onclick="buyItem(this)"></button>
+						 		<button class="color door-color-grey" value="5" onclick="buyItem(this)"></button>
+                <button class="color door-colors-exit">X</button>
+            </div>
+							
+	         <!-- $Купить- $ Труба!-->
+						<div class="shop-item">	
+            <p> Труба - $50</p>
+            <button type="button" class="btn house-trumpet-buy" value="50" onclick="buyItem(this)">Купить</button>  
+						</div>
+             <div class="trumpet-colors">
+                <p>Выберите цвет:</p>								
+                <button class="color trumpet-color-blue" value="5" onclick="buyItem(this)"></button>
+                <button class="color trumpet-color-green" value="5" onclick="buyItem(this)"></button>
+                <button class="color trumpet-color-red" value="5" onclick="buyItem(this)"></button>
+                <button class="color trumpet-color-violet" value="5" onclick="buyItem(this)"></button>
+							 <button class="color trumpet-color-grey" value="5" onclick="buyItem(this)"></button>
+                <button class="color trumpet-colors-exit">X</button>
+            </div>
+
+            <!-- $Купить- $ маленькое окно!-->
+     			<div class="shop-item">
+					<p> Маленькое окно - $50</p>
+							</div>
+						<div class="small-windows">
+							<p> 1 окно</p> <button type="button" class="btn house-window-small-1-buy" value="50" onclick="buyItem(this)">Купить</button>
+							<p> 2 окно</p> <button type="button" class="btn house-window-small-2-buy" value="50" onclick="buyItem(this)">Купить</button>
+							<p> 3 окно</p> <button type="button" class="btn house-window-small-3-buy" value="50" onclick="buyItem(this)">Купить</button>
+							<p> 4 окно</p> <button type="button" class="btn house-window-small-4-buy" value="50" onclick="buyItem(this)">Купить</button>
+						</div>
+		
+                
+            <!-- $Купить- $ большое окно!-->
+			<div class="shop-item">
+				<p> Большое окно - $60</p>
+			</div>
+		 	<div class="big-windows">
+           <p> 1 окно</p><button type="button" class="btn house-window-big-1-buy" value="60" onclick="buyItem(this)">Купить</button>
+            <p> 2 окно</p><button type="button" class="btn house-window-big-2-buy" value="60" onclick="buyItem(this)">Купить</button>          
+      </div>          
+                
+    </section>
+    
+     
+    <section class="build-house">   
+     <h2>Строим дом</h2>
+        <b>(посадка дерева и выращивание сына - в следующих обновлениях)</b>
+        <p>Подсказка: Не стоит тратить больше, чем заработали - это возымеет печальные последствия.</p>
+    <!-- $ДОМ!-->     
+    <section class="house">      
+        <div class="house-base"><div>
+        <div class="house-walls"><div>
+        <div class="house-roof"><div>      
+        <div class="house-door"><div>
+        <div class="house-door-on"><div>
+				<div class="house-trumpet"><div>
+        <div class="house-trumpet-on"><div>
+        <div class="house-window-small house-window-small-1"><div>
+        <div class="house-window-small house-window-small-2"><div>
+        <div class="house-window-small house-window-small-3"><div>
+        <div class="house-window-small house-window-small-4"><div>
+        <div class="house-window-big-1"><div>
+        <div class="house-window-big-2"><div>
+
+    </section>         
+        
+ </div>
+        
+    <script src="script.js"></script>
+    
+</body>
+</html>

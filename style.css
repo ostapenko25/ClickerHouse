@@ -1,0 +1,422 @@
+body {    
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: #777777;
+		background-color: #eeeeee;
+		transition: all 0.5s ease;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+	 width: 100%;
+   margin: 0 auto;
+}
+
+#message {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+#test {
+	opacity: 0;
+	font-size: 50px;	
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f06292;
+    font-weight: bold;
+    line-height: 24px;		
+    margin-right: 20px;
+	  margin-left: 10px;
+    cursor: pointer;
+    border:none; /*убрать рамки кнопочных баттонов. которые задаются по умолчанию*/
+    border-radius: 30px;
+	  font-size: 22px;
+		box-shadow: 2px 0 20px #af3d4c,
+								-2px 0 10px #af3d4c;
+}
+
+.btn:hover {
+	background: #af3d4c;
+	transition: all 0.5s ease;
+}
+
+button:focus {
+	border: none;
+}
+
+h2 {
+  font-size: 4vh;
+  margin-bottom:20px;
+	color: #5952a5
+}
+
+/*КЛИКЕР*/
+
+#count {
+	color:	#22aae5;
+	font-size: 42px !important;	
+}
+
+.work,
+.shop,
+.house {
+    margin: 0 auto;
+    text-align: center;      
+  }
+
+.work {
+	background: lightgrey;
+	padding: 20px;
+}
+
+.shop{
+	background: #eeeeee;
+}
+
+.work .btn {
+    color: white;
+    padding: 20px 30px;
+		height: 100px;
+	  width: 500px;
+}
+
+.btn.clicker {
+	background-color: #29b6f6;
+	box-shadow: 2px 2px 20px #366496;
+	margin-top: 20px;
+}
+
+.clicker:hover {
+	background-color: #5952a5;
+	transition: all 0.5s ease;
+}
+
+.clicker-hard {    
+    background-color: mediumvioletred;
+}
+
+.clicker-hard:hover {    
+    background-color: darkbrown;
+		transition: all 0.5s ease;
+}
+
+#count {
+    font-size: 30px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+/*КЛИКЕР конец*/
+
+
+/*МАГАЗИН начало*/
+
+.shop {   
+    float:left;
+	  width: 45%;
+	  margin-left: 2%;
+    }
+
+.shop-items {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;       
+}
+
+.shop-item {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;	
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.shop-items p {
+    font-size: 26px;
+	  font-weight: 800
+}
+
+.shop .btn {    
+    width: 110px;
+    height: 60px;
+    margin-bottom: 10px; 
+
+}
+
+.color {
+    float:left;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.walls-colors,
+.door-colors,
+.trumpet-colors {
+    display: none;
+    width: 200px;
+    height: 200px;    
+	  margin: 0 auto;
+    margin-bottom: 20px; 		
+}
+
+.walls-color-grey,
+.door-color-grey,
+.trumpet-color-grey {
+    background: #c7c7c7;
+}
+
+.walls-color-blue,
+.door-color-blue,
+.trumpet-color-blue {    
+    background-color: #29b6f6;   
+}
+
+.walls-color-green,
+.door-color-green,
+.trumpet-color-green {    
+    background-color: #1bc69c;   
+}
+
+.walls-color-red,
+.door-color-red,
+.trumpet-color-red {    
+    background-color: #f06292;   
+}
+
+.walls-color-violet,
+.door-color-violet,
+.trumpet-color-violet {    
+    background-color: #5952a5;  
+}
+
+.walls-colors-exit,
+.door-colors-exit,
+.trumpet-colors-exit {
+    /*border: 2px solid red;*/
+}
+
+
+.small-windows,
+.big-windows {	
+	display: flex;
+	flex-wrap: wrap;
+	width: 50% !important;
+	margin: 0 auto;	
+}
+
+.small-windows p,
+.big-windows p {
+	padding-right: 20px;
+	padding-top: 0;
+	font-size: 24px;
+	font-weight: 400;	
+}
+
+/*МАГАЗИН конец*/
+
+
+/*ДОМ начало*/
+
+.build-house {    
+    float:right;
+    width: 50%;
+    margin-bottom: 100px;
+		margin-right: 2%;
+    text-align: center;
+}
+
+.build-house b {    
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.build-house p {    
+   font-size: 28px;
+	 color: #af3d4c;
+}
+
+.house {
+    position: relative;    
+    width: 1000px;
+    height: 1000px;
+    border: 2px dashed black;  
+}
+
+.house-base {
+    position: absolute;   
+    display: none;
+    width: 843px;
+    height: 50px;
+    bottom:0;
+    left:75px;
+    background:url(img/base.png) no-repeat;
+    z-index: -1;        
+}
+
+.house-walls {
+    position: absolute;
+    bottom:50px;
+    left:0;
+    display: none;
+    width: 843px;
+    height: 574px;
+    border:1px solid brown;  
+    z-index: 1;
+}
+
+.house-roof {
+    display: none;
+    position: absolute;
+    top:-225px;
+    left:-45px; 
+	  width: 931px;
+    height: 227px;	
+	  background:url(img/roof.png) no-repeat;
+    z-index: 1;
+}
+
+.house-trumpet {
+    position: absolute;
+    top:-635px;
+    left:-100px;
+    display: none;
+    width: 117px;
+    height: 166px;  
+    background: white;
+}
+
+.house-trumpet-on {
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    width: 117px;
+    height: 166px;
+    background: url(img/trumpet.png) no-repeat;
+    z-index: 4;
+}
+
+
+.house-door {
+    position: absolute;
+    top:505px;
+    left:325px;
+    display: none;
+    width: 310px;
+    height: 296px;
+    z-index: 1;
+}
+
+.house-door-on {
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: none;
+    width: 310px;
+    height: 296px;
+    background:url(img/door.png) no-repeat;
+    z-index: 2;
+}
+
+.house-window-small {     
+    position: absolute;
+    display: none;
+    width: 172px;
+    height: 196px;
+    background:url(img/window-small.png) no-repeat;
+    z-index: 1;   
+}
+
+.house-window-small-1 {   
+    top:400px;
+    left:-140px; 
+}
+
+.house-window-small-2,
+.house-window-small-3,
+.house-window-small-4 {       
+     left:200px;  
+  }
+
+.house-window-big-1 {     
+    position: absolute;
+    top:250px;
+    left:-590px; 
+    display: none;
+    width: 172px;
+    height: 268px;
+    background:url(img/window-big.png) no-repeat;
+    z-index: 1;   
+}
+
+.house-window-big-2 {   
+    position: absolute;
+    top:0;
+    left:585px; 
+    display: none;
+    width: 172px;
+    height: 268px;
+    background:url(img/window-big.png) no-repeat;
+    z-index: 1; 
+}
+
+
+.show { 
+    display: block;       /*отображает элемент при покупке, ДОЛЖНО БЫТЬ В КОНЦЕ? чтобы переопределить изначальные стили*/
+}
+
+.grey {
+    background: #c7c7c7;
+}
+
+.green {
+    background: #1bc69c;
+}
+
+.blue {
+    background: #29b6f6;
+}
+
+.red {
+    background: #f06292;
+}
+
+.violet {
+    background: #5952a5;
+}
+
+/*ДОМ конец*/
+
+/*Банк конфисковал дом (конец игры)*/
+
+.end {   
+    width: 1000px;
+    height: 1000px;
+    background-color: black;    
+}
+
+.end::before {
+    content:"Дом конфискован банком. Чтобы начать сначала, обновите страницу.";
+    color:white;
+    font-size: 60px;
+    position: absolute;
+    text-align: center;
+    top:300px; 
+    left:40px;
+    padding: 50px;
+    z-index: 100;
+}
+
