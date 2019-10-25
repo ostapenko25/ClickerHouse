@@ -1,38 +1,44 @@
 [
         {
-          game_id: "1",
-          name: "Lokomotiv Moskva - Rubin Kazan'",
-          description: " ",
-          season: "2017"
+          "game_id": "1",
+          "name": "Lokomotiv Moskva - Rubin Kazan'",
+          "description": " ",
+          "season": "2017",
+          "h_a": "Home"
         },
         {
-          game_id: "2",
-          name: "FK Arsenal Tula - Dinamo Moskva	",
-          description: " ",
-          season: "2017"
+          "game_id": "2",
+          "name": "FK Arsenal Tula - Dinamo Moskva	",
+          "description": " ",
+          "season": "2017",
+          "h_a": "Home"
         },
         {
-          game_id: "3",
-          name: "FK Ural Sverdlovskaya Oblast - FK Ufa	",
-          description: " ",
-          season: "2018"
+          "game_id": "3",
+          "name": "FK Ural Sverdlovskaya Oblast - FK Ufa	",
+          "description": " ",
+          "season": "2018",
+          "h_a": "Home"
         },
         {
-          game_id: "4",
-          name: "Spartak Moskva - FK SOCHI",
-          description: " ",
-          season: "2018"
+          "game_id": "4",
+          "name": "Spartak Moskva - FK SOCHI",
+          "description": " ",
+          "season": "2018",
+          "h_a": "Away"
         },
         {
-          game_id: "5",
-          name: "Krylya Sovetov - CSKA Moskva",
-          description: " ",
-          season: "2016"
+          "game_id": "5",
+          "name": "Krylya Sovetov - CSKA Moskva",
+          "description": " ",
+          "season": "2016",
+          "h_a": "Away"
         },
         {
-          game_id: "6",
-          name: "Terek Grozny - Krasnodar",
-          description: " ",
-          season: "2016"
+          "game_id": "6",
+          "name": "Terek Grozny - Krasnodar",
+          "description": " ",
+          "season": "2016",
+          "h_a": "Away"
         }
       ]
